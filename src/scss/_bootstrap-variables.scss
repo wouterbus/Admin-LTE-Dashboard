@@ -11,15 +11,15 @@
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-100: #f5f5f5 !default;
+$gray-200: #cbc9c9 !default;
+$gray-300: #a9a6a6 !default;
+$gray-400: #8b8787 !default;
+$gray-500: #6f6c6c !default;
+$gray-600: #575454 !default;
+$gray-700: #42403f !default;
+$gray-800: #2e2d2d !default;
+$gray-900: #1a1a1a !default;
 $black:    #000 !default;
 // scss-docs-end gray-color-variables
 
@@ -40,29 +40,30 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #0d6efd !default;
-$indigo:  #6610f2 !default;
+$primary-jem:    #13828a !default;
+$secondary-jem:    #39bfc9 !default;
+$success-jem:   #2b9675 !default;
+$info-jem:  #4377ff !default;
+$warning-jem:  #fbd12c !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #198754 !default;
 $teal:    #20c997 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
 $colors: (
-  "blue":       $blue,
-  "indigo":     $indigo,
+  "blue":       $primary-jem,
+  "cyan":       $secondary-jem,
+  "green":      $success-jem,
+  "indigo":     $info-jem,
+  "yellow":     $warning-jem,
   "purple":     $purple,
   "pink":       $pink,
   "red":        $red,
   "orange":     $orange,
-  "yellow":     $yellow,
-  "green":      $green,
   "teal":       $teal,
-  "cyan":       $cyan,
   "black":      $black,
   "white":      $white,
   "gray":       $gray-600,
@@ -79,25 +80,25 @@ $color-contrast-dark:      $black !default;
 $color-contrast-light:     $white !default;
 
 // fusv-disable
-$blue-100: tint-color($blue, 80%) !default;
-$blue-200: tint-color($blue, 60%) !default;
-$blue-300: tint-color($blue, 40%) !default;
-$blue-400: tint-color($blue, 20%) !default;
-$blue-500: $blue !default;
-$blue-600: shade-color($blue, 20%) !default;
-$blue-700: shade-color($blue, 40%) !default;
-$blue-800: shade-color($blue, 60%) !default;
-$blue-900: shade-color($blue, 80%) !default;
+$primary-jem-100: tint-color($primary-jem, 80%) !default;
+$primary-jem-200: tint-color($primary-jem, 60%) !default;
+$primary-jem-300: tint-color($primary-jem, 40%) !default;
+$primary-jem-400: tint-color($primary-jem, 20%) !default;
+$primary-jem-500: $primary-jem !default;
+$primary-jem-600: shade-color($primary-jem, 20%) !default;
+$primary-jem-700: shade-color($primary-jem, 40%) !default;
+$primary-jem-800: shade-color($primary-jem, 60%) !default;
+$primary-jem-900: shade-color($primary-jem, 80%) !default;
 
-$indigo-100: tint-color($indigo, 80%) !default;
-$indigo-200: tint-color($indigo, 60%) !default;
-$indigo-300: tint-color($indigo, 40%) !default;
-$indigo-400: tint-color($indigo, 20%) !default;
-$indigo-500: $indigo !default;
-$indigo-600: shade-color($indigo, 20%) !default;
-$indigo-700: shade-color($indigo, 40%) !default;
-$indigo-800: shade-color($indigo, 60%) !default;
-$indigo-900: shade-color($indigo, 80%) !default;
+$indigo-100: tint-color($info-jem, 80%) !default;
+$indigo-200: tint-color($info-jem, 60%) !default;
+$indigo-300: tint-color($info-jem, 40%) !default;
+$indigo-400: tint-color($info-jem, 20%) !default;
+$indigo-500: $info-jem !default;
+$indigo-600: shade-color($info-jem, 20%) !default;
+$indigo-700: shade-color($info-jem, 40%) !default;
+$indigo-800: shade-color($info-jem, 60%) !default;
+$indigo-900: shade-color($info-jem, 80%) !default;
 
 $purple-100: tint-color($purple, 80%) !default;
 $purple-200: tint-color($purple, 60%) !default;
@@ -139,25 +140,25 @@ $orange-700: shade-color($orange, 40%) !default;
 $orange-800: shade-color($orange, 60%) !default;
 $orange-900: shade-color($orange, 80%) !default;
 
-$yellow-100: tint-color($yellow, 80%) !default;
-$yellow-200: tint-color($yellow, 60%) !default;
-$yellow-300: tint-color($yellow, 40%) !default;
-$yellow-400: tint-color($yellow, 20%) !default;
-$yellow-500: $yellow !default;
-$yellow-600: shade-color($yellow, 20%) !default;
-$yellow-700: shade-color($yellow, 40%) !default;
-$yellow-800: shade-color($yellow, 60%) !default;
-$yellow-900: shade-color($yellow, 80%) !default;
+$yellow-100: tint-color($warning-jem, 80%) !default;
+$yellow-200: tint-color($warning-jem, 60%) !default;
+$yellow-300: tint-color($warning-jem, 40%) !default;
+$yellow-400: tint-color($warning-jem, 20%) !default;
+$yellow-500: $warning-jem !default;
+$yellow-600: shade-color($warning-jem, 20%) !default;
+$yellow-700: shade-color($warning-jem, 40%) !default;
+$yellow-800: shade-color($warning-jem, 60%) !default;
+$yellow-900: shade-color($warning-jem, 80%) !default;
 
-$green-100: tint-color($green, 80%) !default;
-$green-200: tint-color($green, 60%) !default;
-$green-300: tint-color($green, 40%) !default;
-$green-400: tint-color($green, 20%) !default;
-$green-500: $green !default;
-$green-600: shade-color($green, 20%) !default;
-$green-700: shade-color($green, 40%) !default;
-$green-800: shade-color($green, 60%) !default;
-$green-900: shade-color($green, 80%) !default;
+$green-100: tint-color($success-jem, 80%) !default;
+$green-200: tint-color($success-jem, 60%) !default;
+$green-300: tint-color($success-jem, 40%) !default;
+$green-400: tint-color($success-jem, 20%) !default;
+$green-500: $success-jem !default;
+$green-600: shade-color($success-jem, 20%) !default;
+$green-700: shade-color($success-jem, 40%) !default;
+$green-800: shade-color($success-jem, 60%) !default;
+$green-900: shade-color($success-jem, 80%) !default;
 
 $teal-100: tint-color($teal, 80%) !default;
 $teal-200: tint-color($teal, 60%) !default;
@@ -169,26 +170,26 @@ $teal-700: shade-color($teal, 40%) !default;
 $teal-800: shade-color($teal, 60%) !default;
 $teal-900: shade-color($teal, 80%) !default;
 
-$cyan-100: tint-color($cyan, 80%) !default;
-$cyan-200: tint-color($cyan, 60%) !default;
-$cyan-300: tint-color($cyan, 40%) !default;
-$cyan-400: tint-color($cyan, 20%) !default;
-$cyan-500: $cyan !default;
-$cyan-600: shade-color($cyan, 20%) !default;
-$cyan-700: shade-color($cyan, 40%) !default;
-$cyan-800: shade-color($cyan, 60%) !default;
-$cyan-900: shade-color($cyan, 80%) !default;
+$cyan-100: tint-color($secondary-jem, 80%) !default;
+$cyan-200: tint-color($secondary-jem, 60%) !default;
+$cyan-300: tint-color($secondary-jem, 40%) !default;
+$cyan-400: tint-color($secondary-jem, 20%) !default;
+$cyan-500: $secondary-jem !default;
+$cyan-600: shade-color($secondary-jem, 20%) !default;
+$cyan-700: shade-color($secondary-jem, 40%) !default;
+$cyan-800: shade-color($secondary-jem, 60%) !default;
+$cyan-900: shade-color($secondary-jem, 80%) !default;
 
-$blues: (
-  "blue-100": $blue-100,
-  "blue-200": $blue-200,
-  "blue-300": $blue-300,
-  "blue-400": $blue-400,
-  "blue-500": $blue-500,
-  "blue-600": $blue-600,
-  "blue-700": $blue-700,
-  "blue-800": $blue-800,
-  "blue-900": $blue-900
+$primary-jem: (
+  "blue-100": $primary-jem-100,
+  "blue-200": $primary-jem-200,
+  "blue-300": $primary-jem-300,
+  "blue-400": $primary-jem-400,
+  "blue-500": $primary-jem-500,
+  "blue-600": $primary-jem-600,
+  "blue-700": $primary-jem-700,
+  "blue-800": $primary-jem-800,
+  "blue-900": $primary-jem-900
 ) !default;
 
 $indigos: (
@@ -301,11 +302,11 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
+$primary:       $primary-jem !default;
+$secondary:     $secondary-jem !default;
+$success:       $success-jem !default;
+$info:          $secondary-jem !default;
+$warning:       $warning-jem !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
@@ -542,16 +543,16 @@ $border-widths: (
   5: 5px
 ) !default;
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
+$border-color:                #ccc !default;
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
+$border-radius:               .5rem !default;
 $border-radius-sm:            .25rem !default;
 $border-radius-lg:            .5rem !default;
-$border-radius-xl:            1rem !default;
-$border-radius-xxl:           2rem !default;
+$border-radius-xl:            1.5rem !default;
+$border-radius-xxl:           3rem !default;
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 // fusv-disable
@@ -606,7 +607,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default; // adminlte-modified
+$font-family-sans-serif:      "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default; // adminlte-modified
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -795,8 +796,8 @@ $table-variants: (
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 // scss-docs-start input-btn-variables
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         .75rem !default;
+$input-btn-padding-x:         2rem !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       $line-height-base !default;
