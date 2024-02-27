@@ -21,16 +21,15 @@
 }
 
 .sidebar-brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: $lte-app-header-height;
   padding: $lte-brand-link-padding-y $lte-brand-link-padding-x;
+  padding-left: 20px;
   overflow: hidden;
   font-size: $navbar-brand-font-size;
   white-space: nowrap;
   border-bottom: $lte-brand-link-border-buttom solid var(--#{$prefix}border-color);
   @include transition(width $lte-transition-speed $lte-transition-fn);
+  @include scrollbar-background-jem();
 
   .brand-link {
     display: flex;
@@ -78,7 +77,7 @@
   padding-right: $lte-sidebar-padding-x;
   padding-bottom: $lte-sidebar-padding-y;
   padding-left: $lte-sidebar-padding-x;
-  @include scrollbar-color-gray();
+  @include scrollbar-background-jem();
   @include scrollbar-width-thin();
 
   .nav-item {

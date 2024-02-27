@@ -6,7 +6,7 @@
   scrollbar-color: var(--#{$prefix}secondary-bg) transparent;
 
   &::-webkit-scrollbar-thumb {
-    background-color: var(--#{$prefix}secondary-bg);
+    background-color: $background-sidebar;
   }
 
   &::-webkit-scrollbar-track {
@@ -33,4 +33,10 @@
   &::-webkit-scrollbar {
     width: 0;
   }
+}
+
+// New
+
+@mixin scrollbar-background-jem() {
+  background-color: #06201d;
 }

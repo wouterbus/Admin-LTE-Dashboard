@@ -45,6 +45,7 @@ $secondary-jem:    #39bfc9 !default;
 $success-jem:   #2b9675 !default;
 $info-jem:  #4377ff !default;
 $warning-jem:  #fbd12c !default;
+$background-sidebar: #06201d !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
 $red:     #dc3545 !default;
@@ -665,7 +666,7 @@ $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
-$headings-color:              inherit !default;
+$headings-color:              $background-sidebar !default;
 // scss-docs-end headings-variables
 
 // scss-docs-start display-headings
